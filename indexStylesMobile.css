@@ -67,6 +67,9 @@
 .mobileMain .rowContainer{
  flex-direction: column;
 }
+.mobileMain .rowContainer .rowItem{
+    height: 60px;
+   }
 .mobileExtra{
     flex-direction: column;
 }
