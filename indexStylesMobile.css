@@ -3,7 +3,7 @@
 .header {
     width:100%;
     padding:  16px 0 16px 0;
-    background-color: var(--primary-color);
+    background-color: var(--primary-highlight-color);
 }
 .active {
     font-size: 20px;
@@ -15,11 +15,12 @@
 .header .rowContainer{
     width: 100%;
 }
-.header .rowContainer .rowItem{
-    width: 20%;
-}
 .header .rowContainer .rowItem a p{
     text-align: center;
+}
+
+.header .rowContainer {
+    flex-direction: column;
 }
 
 /*Landing Image*/
@@ -28,19 +29,25 @@
 }
 .alignMainImage {
     position: relative;
-    width:400px;
+    width:370px;
     top:-800px;
     left:50%;
     transform:translateX(-50%);
 }
 .alignMainImage div:last-of-type{
     position: relative;
-    top: 80px;
+    top: 500px;
     
 }
 .alignMainImage div{
     background-color: #02000e96;
     border-radius: 25px;
+}
+.alignMainImage div .textHeaderXl{
+    font-size: 48px;
+}
+.alignMainImage div .textHeaderSm{
+    font-size: 36px;
 }
 
 /*Prices*/
@@ -113,6 +120,7 @@
     color:var(--secondary-color);
 }
 
+
 /*Socials*/
 @keyframes socialhover {
     0% {width:260px; height:120px;}
@@ -125,7 +133,15 @@
     0% {width:calc(100% - 40px); height:550px;}
 }
 
+.socialsActive{
+    animation: none;
+    width:calc(100% - 40px); height:600px;
+}
+.socialsDeactive{
+    animation: none;
+    width:calc(100% - 40px); height:600px;
+}
+
 .tosText .columnItem .columnItem div {
     padding: 0 10px 0 10px ;
 }
-
