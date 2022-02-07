@@ -1,0 +1,212 @@
+:root{
+    --primary-color:#0c0c0c;
+    --primary-highlight-color:#1b1b1b;
+    --secondary-color:#25ff79;
+    --hover-color:#8effb9;
+
+    --twitter-blue:#1DA1F2;
+    --twitter-blue-hover:#74c2f3;
+
+    --discord-blue:#738adb;
+    --discord-blue-hover:#a4afda;
+
+    --youtube-red:#ff0000;
+    --youtube-red-hover:#ff7e7e;
+}
+body{
+    background-color: var(--primary-color);
+}
+
+p,li,ol,ul{
+    font-family: "Roboto", sans-serif;
+    color:#ffffff;
+}
+
+img{
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover p{
+    color: var(--hover-color);
+    transition: color 0.5s;
+}
+
+.main {
+    background-image: url(Images/Website\ Background.png);
+    
+}
+
+.section{
+    padding: 40px 25px 40px 25px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-top:0px solid var(--secondary-color);
+    border-bottom:0 solid var(--secondary-color);
+}
+
+/*Header*/
+.header {
+    width:100%;
+    padding:  16px 0 16px 0;
+    background-color: var(--primary-color);
+}
+.active {
+    font-size: 20px;
+    color:var(--secondary-color)
+}
+.active:hover {
+    color:var(--secondary-color)
+}
+
+/*Landing Image*/
+.imageContainer.boxsizeWidth12 {
+    height: 800px;
+}
+.alignMainImage {
+    position: relative;
+    width:750px;
+    top:-800px;
+    left:100px;
+}
+.alignMainImage div:last-of-type{
+    position: relative;
+    top: 360px;
+    
+}
+.alignMainImage div{
+    background-color: #02000e96;
+    border-radius: 25px;
+}
+
+/*Prices*/
+.priceGrid * div{
+    width:100px;
+}
+.priceGridBig div{
+    width:200px;
+}
+.priceGrid * div p{
+    text-align: center;
+}
+
+
+/*Gallery*/
+.galleryImg {
+    height:600px;
+    object-fit: cover;
+    width:100%;
+}
+.gallery div {
+    transition: width 0.4s;
+    width:100%;
+}
+.gallery div:hover {
+    transition: width 0.8s;
+    width:1000%;
+}
+
+/*Service*/
+.serviceContainer .rowItem{
+    width: 100%;
+    background-color: var(--primary-highlight-color);
+    border: 1px solid var(--secondary-color);
+}
+.serviceContainer .rowItem:first-of-type{
+    border-radius: 10px 0 0 10px;
+}
+.serviceContainer .rowItem:last-of-type{
+    border-radius: 0 10px 10px 0;
+}
+.tosHighlight:hover{
+    transition: color 0.5s;
+    color:var(--hover-color);
+}
+.tosHighlight{
+    transition: color 0.5s;
+    color:var(--secondary-color);
+}
+
+/*Socials*/
+.socialsHeader{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.socials{
+    margin: 10px 0 10px 0;
+    padding: 0 20px 0 20px;
+    width:260px;
+    height: 120px;
+    border-radius: 20px;
+    background-color:var(--primary-highlight-color);
+    overflow: hidden;
+}
+.socials .columnItem a .rowContainer{
+    border-bottom: 1px dashed var(--primary-color);
+    padding-bottom: 10px;
+}
+.socialsActive{
+    animation: socialhover 1.0s;
+    animation-fill-mode: forwards;
+}
+.socialsDeactive{
+    animation: socialunhover 1.0s;
+    animation-fill-mode: forwards;
+}
+@keyframes socialhover {
+    0% {width:260px; height:120px;}
+    50% {width:calc(100% - 40px); height:120px;}
+    100% {width:calc(100% - 40px); height:400px;}
+}
+@keyframes socialunhover {
+    100% {width:260px; height:120px;}
+    50% {width:calc(100% - 40px); height:120px;}
+    0% {width:calc(100% - 40px); height:400px;}
+}
+/*Footer*/
+.footer {
+    background-color: var(--primary-highlight-color);
+    padding: 30px 0 10px 0;
+}
+.footer .rowItem{
+    margin: 0 40px 0 40px;
+}
+.footer div:first-of-type .rowItem {
+    width: 150px;
+}
+.footer div:last-of-type .rowItem {
+    width: 300px;
+}
+.twitter{
+    color:var(--twitter-blue);
+    transition: color 1s;
+}
+.twitter:hover{
+    color:var(--twitter-blue-hover);
+    transition: color 0.5s;
+}
+.discord{
+    color:var(--discord-blue);
+    transition: color 1s;
+}
+.discord:hover{
+    color:var(--discord-blue-hover);
+    transition: color 0.5s;
+}
+.youtube{
+    color:var(--youtube-red);
+    transition: color 1s;
+}
+.youtube:hover{
+    color: var(--youtube-red-hover);
+    transition: color 0.5s;
+}
+
+.tosText .columnItem .columnItem div {
+    padding: 0 200px 0 200px ;
+}
+

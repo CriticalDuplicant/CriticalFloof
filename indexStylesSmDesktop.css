@@ -1,0 +1,18 @@
+/*Gallery*/
+.galleryImg {
+    height:450px;
+    object-fit: cover;
+    width:100%;
+}
+.gallery div {
+    transition: width 0.4s;
+    width:100%;
+}
+.gallery div:hover {
+    transition: width 0.8s;
+    width:1000%;
+}
+
+.tosText .columnItem .columnItem div {
+    padding: 0 100px 0 100px ;
+}

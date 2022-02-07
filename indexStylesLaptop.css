@@ -1,0 +1,40 @@
+/*Landing Image*/
+.imageContainer.boxsizeWidth12 {
+    height: 800px;
+}
+.alignMainImage {
+    position: relative;
+    width:400px;
+    top:-800px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.alignMainImage div:last-of-type{
+    position: relative;
+    top: 80px;
+    
+}
+.alignMainImage div{
+    background-color: #02000e96;
+    border-radius: 25px;
+}
+
+/*Gallery*/
+.galleryImg {
+    height:300px;
+    object-fit: cover;
+    width:100%;
+}
+.gallery div {
+    transition: width 0.4s;
+    width:100%;
+}
+.gallery div:hover {
+    transition: width 0.8s;
+    width:1000%;
+}
+
+.tosText .columnItem .columnItem div {
+    padding: 0 50px 0 50px ;
+}
+

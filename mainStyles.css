@@ -1,0 +1,230 @@
+/*Cleaning*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Nested Positioning*/
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+}
+.rowItem {
+    padding: 0 10px 0 10px;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnItem {
+    padding: 10px 0 10px 0;
+}
+
+
+/*Position Self Specific*/
+.posSelfXCenter{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+.posSelfXLeft{
+    position: relative;
+    left:0%;
+    transform: translateX(0%);
+}
+.posSelfXRight{
+    position: relative;
+    left:100%;
+    transform: translateX(-100%);
+}
+
+.posSelfYCenter{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.posSelfYLeft{
+    position: relative;
+    top:0%;
+    transform: translateY(0%);
+}
+.posSelfYRight{
+    position: relative;
+    top:100%;
+    transform: translateY(-100%);
+}
+
+.posSelfYCenter.posSelfXCenter{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*Position Content Specific*/
+.justifyCenter{
+ justify-content: center;
+}
+.justifyLeft{
+    justify-content: left;
+}
+.justifyRight{
+    justify-content: right;
+}
+.justifyAround{
+    justify-content: space-around;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+
+.alignCenter{
+    align-content: center;
+}
+.alignLeft{
+    align-content: left;
+}
+.alignRight{
+    align-content: right;
+}
+.alignAround{
+    align-content: space-around;
+}
+.alignBetween{
+    align-content: space-between;
+}
+
+/*Text Position Specific*/
+.textAlignCenter{
+    text-align: center;
+}
+.textAlignLeft{
+    text-align: left;
+}
+.textAlignRight{
+    text-align: right;
+}
+
+/*Text Color Specific*/
+.textHighlight{
+    color: var(--secondary-color);
+}
+
+/*Text Size Specific*/
+.textNormalTi{
+    font-size: 10px;
+}
+.textNormalSm{
+    font-size: 16px;
+}
+.textNormalMd{
+    font-size: 20px;
+}
+.textNormalLg{
+    font-size: 24px;
+}
+.textNormalXl{
+    font-size: 32px;
+}
+
+.textHeaderTi{
+    font-size: 48px;
+}
+.textHeaderSm{
+    font-size: 60px;
+}
+.textHeaderMd{
+    font-size: 72px;
+}
+.textHeaderLg{
+    font-size: 80px;
+}
+.textHeaderXl{
+    font-size: 92px;
+}
+
+/*Size Style Specific*/
+.boxsizeWidth1{
+    width:8.333%;
+}
+.boxsizeWidth2{
+    width:16.667%;
+}
+.boxsizeWidth3{
+    width:25%;
+}
+.boxsizeWidth4{
+    width:33.333%;
+}
+.boxsizeWidth5{
+    width:41.667%;
+}
+.boxsizeWidth6{
+    width:50%;
+}
+.boxsizeWidth7{
+    width:58.333%;
+}
+.boxsizeWidth8{
+    width:66.667%;
+}
+.boxsizeWidth9{
+    width:75%;
+}
+.boxsizeWidth10{
+    width:83.333%;
+}
+.boxsizeWidth11{
+    width:91.667%;
+}
+.boxsizeWidth12{
+    width:100%;
+}
+
+.boxsizeHeight1{
+    height:8.333%;
+}
+.boxsizeHeight2{
+    height:16.667%;
+}
+.boxsizeHeight3{
+    height:25%;
+}
+.boxsizeHeight4{
+    height:33.333%;
+}
+.boxsizeHeight5{
+    height:41.667%;
+}
+.boxsizeHeight6{
+    height:50%;
+}
+.boxsizeHeight7{
+    height:58.333%;
+}
+.boxsizeHeight8{
+    height:66.667%;
+}
+.boxsizeHeight9{
+    height:75%;
+}
+.boxsizeHeight10{
+    height:83.333%;
+}
+.boxsizeHeight11{
+    height:91.667%;
+}
+.boxsizeHeight12{
+    height:100%;
+}

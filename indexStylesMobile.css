@@ -1,0 +1,131 @@
+
+/*Header*/
+.header {
+    width:100%;
+    padding:  16px 0 16px 0;
+    background-color: var(--primary-color);
+}
+.active {
+    font-size: 20px;
+    color:var(--secondary-color)
+}
+.active:hover {
+    color:var(--secondary-color)
+}
+.header .rowContainer{
+    width: 100%;
+}
+.header .rowContainer .rowItem{
+    width: 20%;
+}
+.header .rowContainer .rowItem a p{
+    text-align: center;
+}
+
+/*Landing Image*/
+.imageContainer.boxsizeWidth12 {
+    height: 800px;
+}
+.alignMainImage {
+    position: relative;
+    width:400px;
+    top:-800px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.alignMainImage div:last-of-type{
+    position: relative;
+    top: 80px;
+    
+}
+.alignMainImage div{
+    background-color: #02000e96;
+    border-radius: 25px;
+}
+
+/*Prices*/
+.priceGrid * div{
+    width:80px;
+}
+.priceGridBig div{
+    width:200px;
+}
+.priceGrid * div p{
+    text-align: center;
+}
+.mobileMain{
+    flex-direction: row;
+    justify-content: center;
+   }
+.mobileMain .rowContainer{
+ flex-direction: column;
+}
+.mobileExtra{
+    flex-direction: column;
+}
+.mobileExtra .columnContainer .priceGrid .rowContainer .rowItem{
+    width: 100%;
+}
+
+/*Gallery*/
+.galleryImg {
+    min-height:100px;
+    max-height:250px;
+    object-fit: cover;
+    width:100%;
+}
+.gallery {
+    flex-direction: column;
+}
+.gallery .rowItem{
+    padding: 10px 0 10px 0;
+}
+
+.gallery div {
+    width:100%;
+}
+.gallery div:hover {
+    width:100%;
+}
+
+/*Service*/
+.serviceContainer
+{
+    flex-direction: column;
+}
+.serviceContainer .rowItem{
+    width: calc(100% - 20px);
+    background-color: var(--primary-highlight-color);
+    border: 1px solid var(--secondary-color);
+}
+.serviceContainer .rowItem:first-of-type{
+    border-radius: 10px 10px 0 0;
+}
+.serviceContainer .rowItem:last-of-type{
+    border-radius: 0 0 10px 10px;
+}
+.tosHighlight:hover{
+    transition: color 0.5s;
+    color:var(--hover-color);
+}
+.tosHighlight{
+    transition: color 0.5s;
+    color:var(--secondary-color);
+}
+
+/*Socials*/
+@keyframes socialhover {
+    0% {width:260px; height:120px;}
+    50% {width:calc(100% - 40px); height:120px;}
+    100% {width:calc(100% - 40px); height:550px;}
+}
+@keyframes socialunhover {
+    100% {width:260px; height:120px;}
+    50% {width:calc(100% - 40px); height:120px;}
+    0% {width:calc(100% - 40px); height:550px;}
+}
+
+.tosText .columnItem .columnItem div {
+    padding: 0 10px 0 10px ;
+}
+
