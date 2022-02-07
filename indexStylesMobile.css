@@ -29,14 +29,14 @@
 }
 .alignMainImage {
     position: relative;
-    width:370px;
+    width:330px;
     top:-800px;
     left:50%;
     transform:translateX(-50%);
 }
 .alignMainImage div:last-of-type{
     position: relative;
-    top: 500px;
+    top: 400px;
     
 }
 .alignMainImage div{
