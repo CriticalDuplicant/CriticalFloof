@@ -4,19 +4,25 @@
 }
 .alignMainImage {
     position: relative;
-    width:400px;
+    width:370px;
     top:-800px;
-    left:50%;
-    transform:translateX(-50%);
+    left:100px;
+
 }
 .alignMainImage div:last-of-type{
     position: relative;
-    top: 80px;
+    top: 500px;
     
 }
 .alignMainImage div{
     background-color: #02000e96;
     border-radius: 25px;
+}
+.alignMainImage div .textHeaderXl{
+    font-size: 48px;
+}
+.alignMainImage div .textHeaderSm{
+    font-size: 36px;
 }
 
 /*Gallery*/
@@ -37,4 +43,5 @@
 .tosText .columnItem .columnItem div {
     padding: 0 50px 0 50px ;
 }
+
 
