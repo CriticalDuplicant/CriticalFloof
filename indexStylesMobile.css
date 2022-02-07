@@ -122,26 +122,34 @@
 
 
 /*Socials*/
-@keyframes socialhover {
-    0% {width:260px; height:120px;}
-    50% {width:calc(100% - 40px); height:120px;}
-    100% {width:calc(100% - 40px); height:550px;}
+.socials .columnItem a .rowContainer{
+    flex-direction: column;
 }
-@keyframes socialunhover {
-    100% {width:260px; height:120px;}
-    50% {width:calc(100% - 40px); height:120px;}
-    0% {width:calc(100% - 40px); height:550px;}
+.socials .columnItem a .rowContainer .rowItem:first-of-type i{
+    position: relative;
+    top:10px;
+    left:50%;
+    transform: translateX(-50%);
 }
-
+.socialsHeader{
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    text-align: center;
+}
 .socialsActive{
     animation: none;
-    width:calc(100% - 40px); height:600px;
+    width:calc(100% - 40px); height:auto;
 }
 .socialsDeactive{
     animation: none;
-    width:calc(100% - 40px); height:600px;
+    width:calc(100% - 40px); height:auto;
 }
 
 .tosText .columnItem .columnItem div {
     padding: 0 10px 0 10px ;
 }
+
+footer .rowContainer .rowItem {
+    margin: 0;
+}
+
